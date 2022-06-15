@@ -26,7 +26,7 @@ Grey dark 3: #999
   --Grey-dark-1: #333;
   --Grey-dark-2: #777;
   --Grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3); }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0 0.3); }
 
 * {
   margin: 0;
@@ -173,3 +173,9 @@ body {
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--Grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
