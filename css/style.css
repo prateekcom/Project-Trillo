@@ -187,11 +187,19 @@ body {
 .gallery {
   display: flex; }
   .gallery__photo {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 .overview {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: #fff; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
   .overview__icon-star {
     width: 1.75rem;
     height: 1.75rem;
@@ -200,3 +208,9 @@ body {
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary); }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
