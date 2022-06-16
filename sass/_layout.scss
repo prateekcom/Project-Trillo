@@ -23,6 +23,7 @@
 }
 
 .sidebar{
+    display: flex;
     background-color: var(--Grey-dark-1);
     font-size: 1.4rem;
     flex: 0 0 18%;
@@ -34,3 +35,4 @@
     background-color: rgb(241, 153, 153);
     flex: 1;
 }
+

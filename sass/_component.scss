@@ -123,8 +123,11 @@
     list-style: none;
     font-size: 1.4rem;
     margin-top: 3.5rem;
+    transition: all 2s;
     &__item{
-
+        &:hover{
+            background-color: orangered;
+        }
     }
     &__link:link,
     &__link:visited{
@@ -151,4 +154,33 @@
     color: var(--Grey-light-4);
     text-align: center;
     padding: 2.5rem;
+}
+
+
+////Content
+.gallery{
+    display: flex;
+    // &__item{
+    //     box-sizing: inherit;
+    // }
+    &__photo{
+        width: 100%;
+    }
+}
+
+.overview{
+    display: flex;
+    align-items: center;
+
+    &__icon-star{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__icon-location{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
 }

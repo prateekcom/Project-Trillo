@@ -70,6 +70,7 @@ body {
   display: flex; }
 
 .sidebar {
+  display: flex;
   background-color: var(--Grey-dark-1);
   font-size: 1.4rem;
   flex: 0 0 18%;
@@ -159,7 +160,10 @@ body {
 .side-nav {
   list-style: none;
   font-size: 1.4rem;
-  margin-top: 3.5rem; }
+  margin-top: 3.5rem;
+  transition: all 2s; }
+  .side-nav__item:hover {
+    background-color: orangered; }
   .side-nav__link:link, .side-nav__link:visited {
     text-decoration: none;
     color: var(--Grey-light-1);
@@ -179,3 +183,20 @@ body {
   color: var(--Grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%; }
+
+.overview {
+  display: flex;
+  align-items: center; }
+  .overview__icon-star {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
+  .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
