@@ -285,4 +285,12 @@ body {
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
+}
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
 }/*# sourceMappingURL=main.css.map */
