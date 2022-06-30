@@ -255,8 +255,19 @@
 
 .list{
 
-
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: 1px solid #f4f2f2;
+    border-bottom: 1px solid #f4f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    
     &__item{
+        display: flex;
+        flex: 0 0 50%;
+        font-size: 1.4rem ;
+
         
     }
 }
