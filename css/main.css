@@ -27,6 +27,7 @@ Grey dark 3: #999
   --Grey-dark-2: #777;
   --Grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0,0,0 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,0.06);
 }
 
 * {
@@ -49,6 +50,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  color: var(--Grey-dark-2);
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +89,6 @@ body {
 }
 
 .hotel-view {
-  background-color: rgb(241, 153, 153);
   flex: 1;
 }
 
@@ -295,6 +296,73 @@ body {
   border-bottom: var(--line);
 }
 
+.description {
+  background-color: #fff;
+  padding: 3rem;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+}
+
+.user-review {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  box-sizing: inherit;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+}
+.review__user {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.review__user-box {
+  margin-right: auto;
+}
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+.review__rating {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+}
+.recommend__friends {
+  display: flex;
+}
+.recommend__count {
+  margin-right: auto;
+}
+.recommend__photo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.recommend__photo:not(:last-child) {
+  margin-right: -2rem;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
 .list {
   list-style: none;
   margin: 3rem 0;
@@ -308,4 +376,9 @@ body {
   display: flex;
   flex: 0 0 50%;
   font-size: 1.4rem;
+}
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

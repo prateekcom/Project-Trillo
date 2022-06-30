@@ -248,13 +248,88 @@
     display: flex;
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
-    border-bottom: var(--line);
-    
-    
+    border-bottom: var(--line);  
+}
+.description{
+    background-color: #fff;
+    padding: 3rem;
+    margin-right: 4.5rem;
+    box-shadow: var(--shadow-light);
+    flex: 0 0 60%;
+}
+.user-review{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    box-sizing: inherit;
 }
 
-.list{
+.review{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    margin-bottom: 3.5rem;
 
+    &__user{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+
+        &-box{
+            margin-right: auto;
+        }
+    }
+
+    &__photo{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 3rem;
+    }
+
+    &__rating{
+        color: var(--color-primary);
+        font-size: 2.2rem;
+        font-weight: 300;
+
+    }
+}
+
+.recommend{
+    display: flex;
+    align-items: center ;
+
+    &__friends{
+        display: flex;
+    }
+    &__count{
+        margin-right: auto
+    }
+
+
+    &__photo{
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        
+        &:not(:last-child){
+            margin-right: -2rem;
+        }
+    }
+}
+
+
+.paragraph:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+.list{
+    ::before{
+        
+    }
     list-style: none;
     margin: 3rem 0;
     padding: 3rem 0;
@@ -262,12 +337,17 @@
     border-bottom: 1px solid #f4f2f2;
     display: flex;
     flex-wrap: wrap;
-    
+
     &__item{
         display: flex;
         flex: 0 0 50%;
         font-size: 1.4rem ;
-
+        
         
     }
+}
+
+.cta  {
+    padding: 3.5rem 0;
+    text-align: center;
 }
